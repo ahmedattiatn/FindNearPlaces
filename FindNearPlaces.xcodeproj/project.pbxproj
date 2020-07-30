@@ -13,9 +13,9 @@
 		66597E6724D1A8A20011CA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66597E6524D1A8A20011CA44 /* Main.storyboard */; };
 		66597E6924D1A8A20011CA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66597E6824D1A8A20011CA44 /* Assets.xcassets */; };
 		66597E6C24D1A8A20011CA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66597E6A24D1A8A20011CA44 /* LaunchScreen.storyboard */; };
-		66597E7524D1A8C10011CA44 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66597E7324D1A8C10011CA44 /* PlaceTableViewCell.swift */; };
-		66597E7624D1A8C10011CA44 /* ViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66597E7424D1A8C10011CA44 /* ViewController+UITableView.swift */; };
-		66597E7824D1A8C90011CA44 /* MyPersonalApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66597E7724D1A8C90011CA44 /* MyPersonalApi.swift */; };
+		66597E7C24D1FBF60011CA44 /* ViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66597E7B24D1FBF60011CA44 /* ViewController+UITableView.swift */; };
+		66597E7E24D1FC3D0011CA44 /* MyPersonalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66597E7D24D1FC3D0011CA44 /* MyPersonalAPI.swift */; };
+		66FEA5D824D1FD8B0039159A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FEA5D724D1FD8B0039159A /* PlaceTableViewCell.swift */; };
 		E8D5FF5C146C1D7BA5CA161D /* Pods_FindNearPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DBCDD3B30B4E9E8927AB03 /* Pods_FindNearPlaces.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +28,9 @@
 		66597E6824D1A8A20011CA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66597E6B24D1A8A20011CA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66597E6D24D1A8A20011CA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66597E7324D1A8C10011CA44 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceTableViewCell.swift; path = ../../../FindNearByPLaces/FindNearByPLaces/PlaceTableViewCell.swift; sourceTree = "<group>"; };
-		66597E7424D1A8C10011CA44 /* ViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+UITableView.swift"; path = "../../../FindNearByPLaces/FindNearByPLaces/ViewController+UITableView.swift"; sourceTree = "<group>"; };
-		66597E7724D1A8C90011CA44 /* MyPersonalApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPersonalApi.swift; path = ../../../FindNearByPLaces/FindNearByPLaces/MyPersonalApi.swift; sourceTree = "<group>"; };
+		66597E7B24D1FBF60011CA44 /* ViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UITableView.swift"; sourceTree = "<group>"; };
+		66597E7D24D1FC3D0011CA44 /* MyPersonalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersonalAPI.swift; sourceTree = "<group>"; };
+		66FEA5D724D1FD8B0039159A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		82DBCDD3B30B4E9E8927AB03 /* Pods_FindNearPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindNearPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAF5376591CD587AEC533AB /* Pods-FindNearPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindNearPlaces.debug.xcconfig"; path = "Target Support Files/Pods-FindNearPlaces/Pods-FindNearPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		EB84CA95E6B57D879A4ABE47 /* Pods-FindNearPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindNearPlaces.release.xcconfig"; path = "Target Support Files/Pods-FindNearPlaces/Pods-FindNearPlaces.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,9 +81,9 @@
 				66597E5F24D1A8A20011CA44 /* AppDelegate.swift */,
 				66597E6124D1A8A20011CA44 /* SceneDelegate.swift */,
 				66597E6324D1A8A20011CA44 /* ViewController.swift */,
-				66597E7424D1A8C10011CA44 /* ViewController+UITableView.swift */,
-				66597E7324D1A8C10011CA44 /* PlaceTableViewCell.swift */,
-				66597E7724D1A8C90011CA44 /* MyPersonalApi.swift */,
+				66597E7B24D1FBF60011CA44 /* ViewController+UITableView.swift */,
+				66FEA5D724D1FD8B0039159A /* PlaceTableViewCell.swift */,
+				66597E7D24D1FC3D0011CA44 /* MyPersonalAPI.swift */,
 				66597E6524D1A8A20011CA44 /* Main.storyboard */,
 				66597E6824D1A8A20011CA44 /* Assets.xcassets */,
 				66597E6A24D1A8A20011CA44 /* LaunchScreen.storyboard */,
@@ -197,12 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66597E7C24D1FBF60011CA44 /* ViewController+UITableView.swift in Sources */,
 				66597E6424D1A8A20011CA44 /* ViewController.swift in Sources */,
 				66597E6024D1A8A20011CA44 /* AppDelegate.swift in Sources */,
 				66597E6224D1A8A20011CA44 /* SceneDelegate.swift in Sources */,
-				66597E7624D1A8C10011CA44 /* ViewController+UITableView.swift in Sources */,
-				66597E7824D1A8C90011CA44 /* MyPersonalApi.swift in Sources */,
-				66597E7524D1A8C10011CA44 /* PlaceTableViewCell.swift in Sources */,
+				66597E7E24D1FC3D0011CA44 /* MyPersonalAPI.swift in Sources */,
+				66FEA5D824D1FD8B0039159A /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

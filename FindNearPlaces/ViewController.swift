@@ -15,24 +15,24 @@ class ViewController: UIViewController {
     
     var nameArray = [String]()
     let locManager = CLLocationManager()
-    var lat: Double? = 00.00
-    var long: Double? = 00.00
-    let myAPIKey = MyPersonalApi.apiKey
-    
-    // let stringGoogleAPI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=48.8662109375,2.2199235802917094&radius=5000&type=restaurant&keyword=cruise&key=AIzaSyCFgIIfIM9oRE5fCF02pFiLiScMjJrUKwc"
-    
+    var lat: Double = 00.00
+    var long: Double = 00.00
+    let myAPIKey = MyPersonalAPI.apiKey
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initView()
+    }
+    
+    func  initView(){
         tableView.delegate = self
         tableView.dataSource = self
     }
     
     @IBAction func btnShowClicked(_ sender: Any) {
-        //self.printNames()
+        nameArray.removeAll()
         searchAPIPLacesFromGoogle()
-        print(nameArray)
     }
     
     func searchAPIPLacesFromGoogle() {
@@ -47,14 +47,19 @@ class ViewController: UIViewController {
             self.long = current.coordinate.longitude
             self.lat = current.coordinate.latitude
         }
+        else {
+            // When Using Simulator  Default Values
+            self.long =  2.2199235802917094
+            self.lat = 48.8662109375
+        }
         
         //Print the location
-        print(self.lat ?? "No Value")
-        print(self.long ?? "No Value")
+        print(self.lat)
+        print(self.long)
         
         // build the URL
         let stringGoogleAPI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
-            + "location=\(self.lat ?? 48.8662109375),\(self.long ?? 2.2199235802917094)&"
+            + "location=\(self.lat),\(self.long)&"
             + "radius=5000&"
             + "type=restaurant&"
             + "keyword=cruise&"
@@ -77,6 +82,7 @@ class ViewController: UIViewController {
                                             }
                                             DispatchQueue.main.async {
                                                 self.tableView.reloadData()
+                                                print(self.nameArray)
                                             }
                                         }
                                     }

@@ -33,23 +33,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="386" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod t" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SB9-uV-Nkj">
-                                                    <rect key="frame" x="0.0" y="12" width="374" height="51"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-j7-BIZ">
+                                                    <rect key="frame" x="40" y="27" width="306" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="SB9-uV-Nkj" firstAttribute="leading" secondItem="3kv-Ah-KS2" secondAttribute="leading" id="7ua-SH-OwM"/>
-                                                <constraint firstAttribute="trailing" secondItem="SB9-uV-Nkj" secondAttribute="trailing" constant="12" id="KmS-WB-6oe"/>
-                                                <constraint firstItem="SB9-uV-Nkj" firstAttribute="centerY" secondItem="3kv-Ah-KS2" secondAttribute="centerY" id="MVS-5q-0ur"/>
-                                                <constraint firstItem="SB9-uV-Nkj" firstAttribute="top" secondItem="3kv-Ah-KS2" secondAttribute="top" constant="12" id="dBl-E7-oxV"/>
+                                                <constraint firstItem="MNM-j7-BIZ" firstAttribute="centerY" secondItem="3kv-Ah-KS2" secondAttribute="centerY" id="KWm-XX-KnJ"/>
+                                                <constraint firstItem="MNM-j7-BIZ" firstAttribute="leading" secondItem="3kv-Ah-KS2" secondAttribute="leadingMargin" constant="20" id="tVV-gA-r2M"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MNM-j7-BIZ" secondAttribute="trailing" constant="20" id="xow-i9-EBi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="placeTextView" destination="SB9-uV-Nkj" id="Kx6-Kk-bFf"/>
+                                            <outlet property="placeNameLabel" destination="MNM-j7-BIZ" id="gTo-tb-rLM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
